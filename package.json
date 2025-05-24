@@ -1,0 +1,35 @@
+{
+  "name": "ecnm",
+  "version": "0.0.1",
+  "description": "Remove node modules recursively from a directory",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "golang-npm install",
+    "preuninstall": "golang-npm uninstall",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajshovon/ecnm.git"
+  },
+  "keywords": [
+    "go",
+    "npm",
+    "node_modules",
+    "clear"
+  ],
+  "author": "ajshovon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajshovon/ecnm/issues"
+  },
+  "homepage": "https://github.com/ajshovon/ecnm#readme",
+  "dependencies": {
+    "golang-npm": "^0.0.6"
+  },
+  "goBinary": {
+    "name": "ecnm",
+    "path": "./bin",
+    "url": "https://github.com/ajshovon/ecnm/releases/download/v{{version}}/ecnm_{{version}}_{{platform}}_{{arch}}.tar.gz"
+  }
+}
