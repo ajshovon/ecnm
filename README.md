@@ -1,6 +1,6 @@
 # Easily Clean Node Modules - ECNM
 
-A command-line tool that will be written in Go that recursively finds and removes `node_modules` directories to free up disk space.
+A command-line tool written in Go that recursively finds and removes all `node_modules` directories to free up disk space.
 
 ## Installation
 
